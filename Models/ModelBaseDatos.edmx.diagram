@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="36f41f6be0104cf4bdd106701b37eb51" Name="Diagram1" ZoomLevel="66">
+        <EntityTypeShape EntityType="DESARROLLO_WEBModel.CSTATE" Width="1.5" PointX="8" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="DESARROLLO_WEBModel.DISPONIBLES" Width="1.5" PointX="1.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DESARROLLO_WEBModel.ENFERMEDAD" Width="1.5" PointX="1.375" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DESARROLLO_WEBModel.HISTORIAL_CLINICO" Width="1.5" PointX="7.5" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DESARROLLO_WEBModel.PERSONAL_ADMISTRATIVO" Width="1.5" PointX="7.125" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DESARROLLO_WEBModel.PRODUCTOS" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DESARROLLO_WEBModel.PUESTO" Width="1.5" PointX="5" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DESARROLLO_WEBModel.SEXO" Width="1.5" PointX="3.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DESARROLLO_WEBModel.SOLICITUD_CISTAS" Width="1.5" PointX="1.375" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DESARROLLO_WEBModel.USER" Width="1.5" PointX="10" PointY="4.375" IsExpanded="true" />
+        <AssociationConnector Association="DESARROLLO_WEBModel.FK_USER_CSTATE" ManuallyRouted="false" />
+        <AssociationConnector Association="DESARROLLO_WEBModel.FK_PERSONAL_ADMISTRATIVO_PUESTO" ManuallyRouted="false" />
+        <AssociationConnector Association="DESARROLLO_WEBModel.FK_USER_PERSONAL_ADMISTRATIVO" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DESARROLLO_WEBModel.HABITACION" Width="1.5" PointX="3.5" PointY="9.25" />
+        <AssociationConnector Association="DESARROLLO_WEBModel.FK_HABITACION_DISPONIBLES" />
+        <EntityTypeShape EntityType="DESARROLLO_WEBModel.PACIENTE" Width="1.5" PointX="4.375" PointY="1.25" />
+        <AssociationConnector Association="DESARROLLO_WEBModel.FK_PACIENTE_ENFERMEDAD" />
+        <AssociationConnector Association="DESARROLLO_WEBModel.FK_PACIENTE_HABITACION" />
+        <AssociationConnector Association="DESARROLLO_WEBModel.FK_HISTORIAL_CLINICO_PACIENTE" />
+        <AssociationConnector Association="DESARROLLO_WEBModel.FK_PACIENTE_SEXO" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
